@@ -79,8 +79,8 @@ $user = (object)[
     'name' => $user->name,
     'url' => 'https://twitch.tv/' . $user->user,
     'game' => $user->game ?: '(nenhum jogo, ainda)',
-    'image_logo' => !strstr($user->image_logo, 'default') ? $user->image_logo : 'https://xt.art.br/indica/api/no_profile.jpg',
-    'image_game' => $user->game ? 'https://static-cdn.jtvnw.net/ttv-boxart/' . rawurlencode($user->game) . '-144x192.jpg' : 'https://xt.art.br/indica/api/no_game.jpg',
+    'image_logo' => !strstr($user->image_logo, 'default') ? $user->image_logo : 'https://projetonebula.com.br/nso/api/no_profile.jpg',
+    'image_game' => $user->game ? 'https://static-cdn.jtvnw.net/ttv-boxart/' . rawurlencode($user->game) . '-144x192.jpg' : 'https://projetonebula.com.br/nso/api/no_game.jpg',
 ];
 
 // ====================================================================================================================
