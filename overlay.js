@@ -316,7 +316,7 @@ const css_remove = (element, classname) => {
 }
 
 const indica_call = (channel, caller) => /* overlay */ {
-    fetch('https://xt.art.br/indica/api/' + channel + '/' + caller)
+    fetch('https://projetonebula.com.br/nso/api/' + channel + '/' + caller)
         .then(response => response.json())
         .then((response) => {
             overlay.push(response)
@@ -392,11 +392,11 @@ window.addEventListener('onEventReceived', (obj) => /* custom */ {
     }
     if (obj.detail.event.field == 'img_channel_link') {
         custom.img_channel = custom.img_channel.replace('https://cdn.streamelements.com/uploads/', '')
-        fetch('https://xt.art.br/indica/api/' + custom.caller + '/gif/' + custom.img_channel)
+        fetch('https://projetonebula.com.br/nso/api/' + custom.caller + '/gif/' + custom.img_channel)
             .then(response => indica_call(custom.caller, custom.caller))
     }
     if (obj.detail.event.field == 'img_channel_unlink') {
-        fetch('https://xt.art.br/indica/api/' + custom.caller + '/gif/unlink')
+        fetch('https://projetonebula.com.br/nso/api/' + custom.caller + '/gif/unlink')
             .then(response => indica_call(custom.caller, custom.caller))
     }
     if (obj.detail.event && obj.detail.listener === 'message') {
