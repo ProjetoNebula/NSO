@@ -1,18 +1,11 @@
 # NSO - Nebula Shout Out
-## Powered by [!indica](https://xt.art.br/indica)
-
-**!indica** is a fully customizable tool for streamers who recommend other streamers in their livestreams.
-
-## developed by
-
-
 
 # commands
 
 ### streamelements
 
 ```
-Conheça ${urlfetch https://xt.art.br/indica/api/${1}/bot/name} que estava jogando ${urlfetch https://xt.art.br/indica/api/${1}/bot/game}. Acesse https://twitch.tv/${urlfetch https://xt.art.br/indica/api/${1}/bot/user}
+Conheça ${urlfetch https://projetonebula.com.br/nso/api/${1}/bot/name} que estava jogando ${urlfetch https://projetonebula.com.br/nso/api/${1}/bot/game}. Acesse https://twitch.tv/${urlfetch https://projetonebula.com.br/nso/api/${1}/bot/user}
 ```
 
 ### streamelements | default
@@ -54,7 +47,7 @@ Conheça $target que estava jogando $game[$target]. Acesse https://twitch.tv/$ta
 ### html
 
 ```html
-<script src="https://xt.art.br/indica/overlay.js"></script>
+<script src="https://projetonebula.com.br/nso/overlay.js"></script>
 ```
 ### css
 
@@ -234,9 +227,9 @@ CREATE TABLE IF NOT EXISTS `logs` (
   `time` time DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 ```
+## Powered by [!indica](https://projetonebula.com.br/nso)
 
-### NSO developed by Nebula Team
-
+**!indica** is a fully customizable tool for streamers who recommend other streamers in their livestreams.
 ### !indica developed by:
 - rodrigo brandão / https://twitch.tv/brandaozzz
 - sony linhares / https://twitch.tv/xtart
