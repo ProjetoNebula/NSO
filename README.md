@@ -227,7 +227,7 @@ CREATE TABLE IF NOT EXISTS `logs` (
   `time` time DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 ```
-## Powered by [!indica](https://projetonebula.com.br/nso)
+## Powered by [!indica](https://xt.art.br/indica)
 
 **!indica** is a fully customizable tool for streamers who recommend other streamers in their livestreams.
 ### !indica developed by:
